@@ -43,7 +43,6 @@ if( !class_exists( 'EDD_Twilio_Connect' ) ) {
 			if( !self::$instance ) {
 				self::$instance = new EDD_Twilio_Connect();
 				self::$instance->setup_constants();
-				self::$instance->includes();
 				self::$instance->load_textdomain();
 				self::$instance->hooks();
 			}
@@ -68,18 +67,6 @@ if( !class_exists( 'EDD_Twilio_Connect' ) ) {
 
 			// Plugin version
 			define( 'TWILIO_CONNECT_VER', '1.1.0' );
-		}
-
-
-		/**
-		 * Include necessary files
-		 *
-		 * @access		private
-		 * @since		1.1.0
-		 * @return		void
-		 */
-		private function includes() {
-
 		}
 
 
